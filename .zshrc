@@ -1,7 +1,7 @@
 
 
 # ========================================================================#
-#							    PowerLevel10K init
+#   PowerLevel10K init
 #=========================================================================#
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -10,7 +10,7 @@ fi
 
 
 # ========================================================================#
-#							antigen init
+#   antigen init
 #=========================================================================#
 source $HOME/.config/antigen/antigen.zsh
 
@@ -24,7 +24,11 @@ antigen bundle colored-man-pages
 antigen bundle colorize
 antigen bundle compleat
 antigen bundle cp
+
 antigen bundle docker
+zstyle ':completion:*:*:docker:*' option-stacking yes
+zstyle ':completion:*:*:docker-*:*' option-stacking yes
+
 antigen bundle docker-compose
 antigen bundle fastfile
 antigen bundle mosh
@@ -53,7 +57,7 @@ antigen bundle Tarrasch/zsh-bd
 antigen apply
 
 # ========================================================================#
-#							== MY SETTINGS ==							  
+#   == MY SETTINGS ==							  
 #=========================================================================#
 
 
@@ -173,25 +177,25 @@ alias bsta="brew services stop --all"
 alias vim='nvim'
 alias rr='ranger'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias cpuom="config push origin master"
+alias cpom="config push origin master"
 
 
 # ========================================================================#
-#							== Plugin Settings ==							  
+#   == Plugin Settings ==							  
 #=========================================================================#
 
 
-#====================
+#=========================
 #	powerlevel10k
-#====================
+#=========================
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
 
-#====================
+#=========================
 #	    zoxide 		
-#====================
+#=========================
 
 # =============================================================================
 #
@@ -286,5 +290,3 @@ function zi() {
 #
 eval "$(zoxide init zsh)"
 
-zstyle ':completion:*:*:docker:*' option-stacking yes
-zstyle ':completion:*:*:docker-*:*' option-stacking yes
