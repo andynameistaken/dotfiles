@@ -1,6 +1,6 @@
 ![alt text](https://github.com/andynameistaken/dotfiles/blob/master/image_dotfiles.png)
 
-** IT IS STILL WORK IN PROGRESS **
+**IT IS STILL WORK IN PROGRESS**
 ## The Looks
 
 ![alt text](https://github.com/andynameistaken/dotfiles/blob/master/desktop.png)
