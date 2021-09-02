@@ -1,4 +1,5 @@
 ![alt text](https://github.com/andynameistaken/dotfiles/blob/master/image_dotfiles.png)
+![alt text](https://github.com/andynameistaken/dotfiles/blob/master/desktop.png)
 
 ## Brew Formulae
 
