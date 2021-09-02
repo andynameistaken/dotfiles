@@ -138,9 +138,6 @@
 
 ## ZSH Plugins
 
-- [Productivity](Plugins-Overview#productivity)
-- [FS jumping](Plugins-Overview#fs-jumping)
-- [Build tools](Plugins-Overview#build-tools)
 
 ### Productivity
 
