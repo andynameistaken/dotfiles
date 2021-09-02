@@ -141,13 +141,6 @@
 - [Productivity](Plugins-Overview#productivity)
 - [FS jumping](Plugins-Overview#fs-jumping)
 - [Build tools](Plugins-Overview#build-tools)
-- [Node JS](Plugins-Overview#node-js)
-- [PHP](Plugins-Overview#php)
-- [Ruby](Plugins-Overview#ruby)
-- [Python](Plugins-Overview#python)
-- [Distro-related](Plugins-Overview#distro-related)
-- [MacOS](Plugins-Overview#macos)
-- [Misc](Plugins-Overview#misc)
 
 ### Productivity
 
