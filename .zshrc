@@ -176,6 +176,7 @@ alias vim='nvim'
 alias rr='ranger'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cadd='config add'
+alias ccom="config commit -m"
 alias cpom="config push origin master"
 
 
