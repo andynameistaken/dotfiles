@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<libraryInfos>
-    <libraryInfo home="/usr/local/Cellar/openjdk/16.0.1/libexec/openjdk.jdk/Contents/Home" version="16.0.1"/>
-    <libraryInfo home="/usr/local/Cellar/openjdk@11/11.0.10/libexec/openjdk.jdk/Contents/Home" version="11.0.10"/>
-    <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home" version="16.0.1"/>
-    <libraryInfo home="/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home" version="11.0.12"/>
-</libraryInfos>
