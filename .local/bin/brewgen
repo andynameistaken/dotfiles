@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+brew_formulae="$(brew list --formulae)"
+echo "## Brew Formulae"
+echo 
+set -f
+for i in ${brew_formulae}; do
+  set +f
+    echo "* $i"
+done
+set +f
+
+echo
+
+brew_casks="$(brew list --cask)"
+echo "## Brew Casks"
+echo
+set -f
+for i in ${brew_casks}; do
+  set +f
+    echo "* $i"
+done
+set +f
+
+
+
