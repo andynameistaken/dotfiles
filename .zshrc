@@ -173,6 +173,7 @@ alias bsta="brew services stop --all"
 alias vim='nvim'
 alias rr='ranger'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias cpuom="config push origin master"
 
 
 # ========================================================================#
