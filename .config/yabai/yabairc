@@ -12,12 +12,6 @@ gaps_left="5"
 gaps_right="5"
 gaps_inner="5"
 
-
-
-# normal_border_color="010101"
-# focused_border_color="808080"
-# preselect_border_color="2d74da"
-
 # ====== Tiling settings =======================
 
 yabai -m config layout                      bsp
@@ -52,33 +46,6 @@ yabai -m config auto_balance                off
 
 yabai -m config external_bar all:23:0
 
-
-# yabai -m config window_border_width         2
-# yabai -m config active_window_border_color  "0xE0${focused_border_color}"
-# yabai -m config insert_window_border_color  "0xE0${preselect_border_color}"
-# yabai -m config normal_window_border_color  "0x00${normal_border_color}"
-
-
-# add an on_enter command to the default mode
-## yabai -m config active_window_border_color  0xFFF0DFA7;\
-## yabai -m config active_window_border_color  0xff6795FF ;\
- 
-# :: default   : yabai -m config window_border_width         1;\
-#                yabai -m config active_window_border_color  0xFF679e6d;\
-#                yabai -m config active_window_opacity       1.0;\
-#                yabai -m config normal_window_opacity       0.9
-
-# :: window  @ : yabai -m config window_border_width         10 ;\
-#                yabai -m config active_window_border_color 0xFF679e6d;\
-#                yabai -m config active_window_opacity       0.8 ;\
-#                yabai -m config normal_window_opacity       0.6
-
-# from 'default' mode, activate mode 'window' (`0x39` -> CAPS LOCK)
-# cmd - x       ; window
-# from 'window' mode, activate mode 'default'
-# window < cmd - x    ; default
-# window < escape     ; default
-# window < i          ; default
 yabai -m config window_border                on
 yabai -m config active_window_border_color  0xFF679e6d
 yabai -m config normal_window_border_color  0xFF3d4d3e
@@ -100,6 +67,7 @@ yabai -m rule --add label="mpv" app="^mpv$" manage=off
 yabai -m rule --add label="The Unarchiver" app="^The Unarchiver$" manage=off
 yabai -m rule --add label="Transmission" app="^Transmission$" manage=off
 yabai -m rule --add label="VirtualBox" app="^VirtualBox$" manage=off
+yabai -m rule --add label="Info" app=".*Info$" manage=off
 
 # regex that matches JetBrains apps
 # apps='^(IntelliJ IDEA|WebStorm|CLion|PyCharm)$'
