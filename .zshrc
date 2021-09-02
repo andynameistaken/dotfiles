@@ -1,10 +1,17 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+
+
+# ========================================================================#
+#							    PowerLevel10K init
+#=========================================================================#
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
+
+# ========================================================================#
+#							antigen init
+#=========================================================================#
 source $HOME/.config/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
@@ -33,7 +40,6 @@ antigen bundle zsh-users/zsh-completions
 # antigen bundle zsh-users/zsh-autosuggestions
 
 antigen theme romkatv/powerlevel10k 
-
 antigen bundle jeffreytse/zsh-vi-mode
 
 # Quickly go back to a specific parent directory instead of typing cd ../../.. redundantly.
@@ -47,7 +53,7 @@ antigen bundle Tarrasch/zsh-bd
 antigen apply
 
 # ========================================================================#
-#							== MY SETTINGS ==							  #
+#							== MY SETTINGS ==							  
 #=========================================================================#
 
 
@@ -56,7 +62,7 @@ antigen apply
 
 
 #===================#
-#	Exports			#
+#	Exports			
 #===================#
 
 # You may need to manually set your language environment
@@ -64,19 +70,38 @@ export LANG=en_US.UTF-8
 export EDITOR=nvim
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+
+#===================#
+#	PATH			
+#===================#
+
+# if nothing exists do nothing, else add .local/bin/ to PATH
+[[ ! -d ~/.local/bin ]] || PATH=$PATH:~/.local/bin
+
+# add MacTeX to PATH
+export PATH="/Library/TeX/texbin/pdflatex:$PATH"
+
+# To activate jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# LANG prefs for nice ssh
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
 #====================
-#	fu(n)ctions		#
+#	fu(n)ctions		
 #====================
 
+# goes up from current directory
+# cd..N, while n is number of directories to go up
+# ex. 'cd.. 2' = 'cd ../../'
 function cd_up() 
 {
-	# goes up from current directory:
-	# cd..N, while n is number of directories to go up
-	# ex. 'cd.. 2' = 'cd ../../'
 	cd $(printf "%0.s../" $(seq 1 $1 ));  
 }
 
-# mkdir dirname -> cd dirname
+# mkdir dirname; cd dirname
 mkcd ()
 {
     mkdir -p -- "$1" &&
@@ -84,6 +109,10 @@ mkcd ()
 }
 
 # Docker
+#
+#   docker stopall      - stops all containers
+#   docker rmall        - removes all containers
+#   docker images rmall - removes all images
 docker() {
     if [[ $@ == "stopall" ]]
 	then
@@ -99,6 +128,10 @@ docker() {
         command docker "$@"
     fi
 }
+# gi somethingtoignore - provides gitignore for specific configurations
+# gi macos
+function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
+
 
 #====================
 #	Aliases 		#
@@ -114,7 +147,7 @@ alias cdo="cd $HOME/Devel/Docker"
 alias cdb="cd $HOME/.local/bin"
 
 # -----------------------
-#   edit file  aliases
+#   edit configs aliases
 # -----------------------
 alias ecz="nvim $HOME/.zshrc"
 alias ecy="nvim $HOME/.config/yabai/yabairc"
@@ -141,22 +174,24 @@ alias vim='nvim'
 alias rr='ranger'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-#===================#
-#	PATH			#
-#===================#
-[[ ! -d ~/.local/bin ]] || PATH=$PATH:~/.local/bin
 
-export PATH="/Library/TeX/texbin/pdflatex:$PATH"
+# ========================================================================#
+#							== Plugin Settings ==							  
+#=========================================================================#
 
-# To activate jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
 
-export LC_ALL=en_US.UTF-8  
-export LANG=en_US.UTF-8
-
+#====================
+#	powerlevel10k
+#====================
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+
+#====================
+#	    zoxide 		
+#====================
+
 # =============================================================================
 #
 # Utility functions for zoxide.
@@ -252,4 +287,3 @@ eval "$(zoxide init zsh)"
 
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
-function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}

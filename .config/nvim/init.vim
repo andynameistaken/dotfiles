@@ -33,6 +33,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'romgrk/barbar.nvim'
 " produce markdown tables
 Plug 'dhruvasagar/vim-table-mode'
+" For bash completion
+Plug 'neovim/nvim-lspconfig'
 
 " Initialize plugin system
 call plug#end()
