@@ -1,0 +1,13 @@
+{
+  "baseFontSize": 18,
+  "translucency": false,
+  "cssTheme": "Obsidian gruvbox",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "vim-hotfix-2",
+    "code-font",
+    "fonts",
+    "readeable-line-width-fix_1",
+    "style-nested-list-bullets"
+  ]
+}

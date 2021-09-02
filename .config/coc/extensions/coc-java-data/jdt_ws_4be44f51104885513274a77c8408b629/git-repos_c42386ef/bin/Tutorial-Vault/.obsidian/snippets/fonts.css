@@ -1,0 +1,19 @@
+/* Edit mode code */
+.cm-s-obsidian pre.HyperMD-codeblock {     
+  font-family: Consolas for Powerline;
+}
+.markdown-source-view { 
+  font-family: FiraCode Nerd Font; 
+
+}
+
+
+/* Preview mode: code */
+.markdown-preview-view code {
+  font-family: Consolas for Powerline;  
+}
+
+/* Preview Mode */
+.markdown-preview-view {
+  font-family: Mononoki Nerd Font, sans-serif !important;
+}

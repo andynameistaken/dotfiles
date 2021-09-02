@@ -1,0 +1,27 @@
+{
+  "emacsyKeys": true,
+  "showLineNumber": true,
+  "vimMode": true,
+  "autoPairMarkdown": true,
+  "readableLineLength": true,
+  "spellcheck": true,
+  "spellcheckDictionary": [
+    "DevOps",
+    "config",
+    "ofc",
+    "virtualized",
+    "natively",
+    "macOS",
+    "Dockerfile"
+  ],
+  "promptDelete": false,
+  "trashOption": "local",
+  "foldIndent": false,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "communityPluginSortOrder": "download"
+}

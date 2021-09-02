@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/andy/.config/coc/extensions/coc-java-data/jdt_ws_4be44f51104885513274a77c8408b629/.metadata/.plugins/org.eclipse.jdt.core
+2672727751.index
+3842426239.index

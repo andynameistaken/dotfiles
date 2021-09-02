@@ -1,0 +1,117 @@
+{
+  "main": {
+    "id": "24f7c8bacee2466a",
+    "type": "split",
+    "children": [
+      {
+        "id": "5138f662ef30c19d",
+        "type": "leaf",
+        "state": {
+          "type": "image",
+          "state": {
+            "file": "Docker/Pasted image 20210831002329.png"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "43a610d496751be6",
+    "type": "split",
+    "children": [
+      {
+        "id": "a239b41179242a81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "debdee08af4dfa78",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "71488f58489e525d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6d8e6b99fb3073c2",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4a50563056002f60",
+    "type": "split",
+    "children": [
+      {
+        "id": "d97224e4ce077c7c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02fce2a29a76e7d5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "fb9823e7ea4af0df",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Docker/Pasted image 20210831002329.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5138f662ef30c19d",
+  "lastOpenFiles": [
+    "Pasted image 20210831002329.png",
+    "Excalidraw/Drawing 2021-08-12 21.42.50.excalidraw.md",
+    "Docker/docker-project.md",
+    "Docker/docker-notes.md",
+    "Docker/Untitled.md",
+    "docker-project_2021-08-31 15.06.21.excalidraw.md",
+    "Untitled.md",
+    "Docker/container-and-OS.md",
+    "Shell/sh-vs-bash.md",
+    "Excalidraw/Port_Communication.md"
+  ]
+}
