@@ -1,4 +1,7 @@
 ![alt text](https://github.com/andynameistaken/dotfiles/blob/master/image_dotfiles.png)
+
+## The Looks
+
 ![alt text](https://github.com/andynameistaken/dotfiles/blob/master/desktop.png)
 
 ## Brew Formulae
