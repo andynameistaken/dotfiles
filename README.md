@@ -4,7 +4,9 @@
 
 ![alt text](https://github.com/andynameistaken/dotfiles/blob/master/desktop.png)
 
-## Brew Formulae
+## Homebrew
+
+### Brew Formulae
 
 * autoconf
 * automake
@@ -89,7 +91,7 @@
 * zoxide
 * zstd
 
-## Brew Casks
+### Brew Casks
 
 * adobe-acrobat-reader
 * appcleaner
@@ -133,3 +135,46 @@
 * visual-studio-code
 * vlc
 * vmware-fusion
+
+## ZSH Plugins
+
+- [Productivity](Plugins-Overview#productivity)
+- [FS jumping](Plugins-Overview#fs-jumping)
+- [Build tools](Plugins-Overview#build-tools)
+- [Node JS](Plugins-Overview#node-js)
+- [PHP](Plugins-Overview#php)
+- [Ruby](Plugins-Overview#ruby)
+- [Python](Plugins-Overview#python)
+- [Distro-related](Plugins-Overview#distro-related)
+- [MacOS](Plugins-Overview#macos)
+- [Misc](Plugins-Overview#misc)
+
+### Productivity
+
+| Name                                                                                                            | Description                                                                                                    |
+| --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| [colored-man-pages](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages)                   | adds colors to manpages                                                                                        |
+| [colorize](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colorize)                                     | cat with syntax highlight support                                                                              |
+| [compleat](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/compleat)                                     | reformats completion http://github.com/mbrubeck/compleat                                                       |
+| [cp](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/cp)                                                 | cp with progress bar (rsync)                                                                                   |
+| [extract](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/extract)                                       | 'x' alias - swiss knife for archive extracting                                                                 |
+| [mosh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/mosh)                                             | mobile shell with roaming (wifi, mobile networks) and local echo http://mosh.mit.edu/                          |
+
+
+### FS Jumping
+
+| Name                                                                        | Description                                                   |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| [zoxide](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/zoxide)     | a blazing fast, fully featured autojumper written in Rust ([homepage](https://github.com/ajeetdsouza/zoxide)) |
+
+### Build tools
+
+| Name                                                                                  | Description                                                                               |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| [docker](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker)               | application shipment tool https://github.com/dotcloud/docker                              |
+| [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)                     | extras: git-extras gitfast git-flow git-flow-avh git-hubflow git-remote-branch            |
+| [gitignore](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore)         | git alias to fetch default .gitignore files from http://gitignore.io/                     |
+| [vagrant](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vagrant)             | quick development env deployment http://www.vagrantup.com/                                |
+
+
+
