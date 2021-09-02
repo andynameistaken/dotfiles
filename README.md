@@ -168,4 +168,10 @@
 | [vagrant](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vagrant)             | quick development env deployment http://www.vagrantup.com/                                |
 
 
+## TO-DO
+- [ ] Update ZSH plugins info
+- [ ] Migrate brew formulae to Nix
+- [ ] Fix NeoVim shortcuts 
+- [ ] Add Yabai dynamic workspace balancing between monitors
+
 

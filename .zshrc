@@ -24,6 +24,7 @@ antigen bundle colored-man-pages
 antigen bundle colorize
 antigen bundle compleat
 antigen bundle cp
+antigen bundle gitignore
 
 antigen bundle docker
 zstyle ':completion:*:*:docker:*' option-stacking yes
@@ -132,9 +133,6 @@ docker() {
         command docker "$@"
     fi
 }
-# gi somethingtoignore - provides gitignore for specific configurations
-# gi macos
-function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 
 #====================
@@ -177,6 +175,7 @@ alias bsta="brew services stop --all"
 alias vim='nvim'
 alias rr='ranger'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias cadd='config add'
 alias cpom="config push origin master"
 
 

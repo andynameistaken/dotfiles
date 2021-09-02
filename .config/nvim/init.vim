@@ -35,7 +35,8 @@ Plug 'romgrk/barbar.nvim'
 Plug 'dhruvasagar/vim-table-mode'
 " For bash completion
 Plug 'neovim/nvim-lspconfig'
-
+" Indent Blank Lines
+Plug 'lukas-reineke/indent-blankline.nvim'
 " Initialize plugin system
 call plug#end()
 
