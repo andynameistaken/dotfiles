@@ -173,5 +173,6 @@
 - [ ] Migrate brew formulae to Nix
 - [ ] Fix NeoVim shortcuts 
 - [ ] Add Yabai dynamic workspace balancing between monitors
+- [  ] Write ansible script for automaing config
 
 

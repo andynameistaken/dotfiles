@@ -37,6 +37,13 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'neovim/nvim-lspconfig'
 " Indent Blank Lines
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'gabrielelana/vim-markdown'
+" Multi Cursors
+Plug 'mg979/vim-visual-multi'
+" Preview Markdown with :MarkdownPreview
+" If you have nodejs and yarn
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
 " Initialize plugin system
 call plug#end()
 
@@ -366,3 +373,10 @@ inoreabbrev <expr> __
           \ <SID>isAtStartOfLine('__') ?
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
+" ----------------------------------------------
+"   vim visual multi
+" ----------------------------------------------
+
+let g:VM_maps = {}
+let g:VM_maps["Select Cursor Down"] = '<C-S-Down>'      " start selecting down
+let g:VM_maps["Select Cursor Up"]   = '<C-S-Up>'        " start selecting up

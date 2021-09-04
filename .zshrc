@@ -38,6 +38,7 @@ antigen bundle vagrant-prompt
 antigen bundle extract
 antigen bundle aws
 antigen bundle universalarchive
+antigen bundle zsh-interactive-cd
 
 
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -45,7 +46,7 @@ antigen bundle zsh-users/zsh-completions
 # antigen bundle zsh-users/zsh-autosuggestions
 
 antigen theme romkatv/powerlevel10k 
-antigen bundle jeffreytse/zsh-vi-mode
+# antigen bundle jeffreytse/zsh-vi-mode
 
 # Quickly go back to a specific parent directory instead of typing cd ../../.. redundantly.
 # $ mkdir -p a/b/c/d
@@ -74,6 +75,7 @@ antigen apply
 export LANG=en_US.UTF-8
 export EDITOR=nvim
 export HOMEBREW_NO_AUTO_UPDATE=1
+RANGER_LOAD_DEFAULT_RC=FALSE
 
 
 #===================#
@@ -170,15 +172,21 @@ alias bssa="brew services start --all"
 alias bsta="brew services stop --all" 
 
 # ----------------
-#   other aliases
+#   git aliases
 # ----------------
-alias vim='nvim'
-alias rr='ranger'
+
+# Dotfiles aliases
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cadd='config add'
 alias ccom="config commit -m"
 alias cpom="config push origin master"
 
+# ----------------
+#   other aliases
+# ----------------
+alias vim='nvim'
+alias rr='ranger'
+alias ob='open -a Obsidian'
 
 # ========================================================================#
 #   == Plugin Settings ==							  
