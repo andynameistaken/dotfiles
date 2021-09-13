@@ -1,0 +1,6 @@
+M.goto_index()	neuron.txt	/*M.goto_index()*
+M.goto_next_extmark()	neuron.txt	/*M.goto_next_extmark()*
+M.goto_prev_extmark()	neuron.txt	/*M.goto_prev_extmark()*
+M.rib()	neuron.txt	/*M.rib()*
+M.setup()	neuron.txt	/*M.setup()*
+M.setup()	neuron.txt	/*M.setup()*
