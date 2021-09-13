@@ -75,7 +75,9 @@ antigen apply
 export LANG=en_US.UTF-8
 export EDITOR=nvim
 export HOMEBREW_NO_AUTO_UPDATE=1
-RANGER_LOAD_DEFAULT_RC=FALSE
+export RANGER_LOAD_DEFAULT_RC=FALSE
+
+
 
 
 #===================#
@@ -87,6 +89,7 @@ RANGER_LOAD_DEFAULT_RC=FALSE
 
 # add MacTeX to PATH
 export PATH="/Library/TeX/texbin/pdflatex:$PATH"
+export PATH="/usr/local/anaconda3/bin:$PATH"
 
 # To activate jenv
 export PATH="$HOME/.jenv/bin:$PATH"
@@ -298,3 +301,4 @@ function zi() {
 #
 eval "$(zoxide init zsh)"
 
+if [ -e /Users/andy/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/andy/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
